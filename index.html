@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="zh-TW"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;愛的禮物&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 100%);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>min-height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 35px 25px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 28px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 15px 35px rgba(255, 77, 109, 0.25);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 360px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ff4d6d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 1px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.img-container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 200px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>user-select: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.img-container svg {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.img-container:hover svg {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.08);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-accept {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ff4d6d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 14px 40px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 19px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 25px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 6px 16px rgba(255, 77, 109, 0.35);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.2s ease;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-accept:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-color: #ff2a55;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn-accept:active {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(1px);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hint {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #b0b0b0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.status-msg {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ff4d6d;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 第一階段：打開愛的禮物 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="step-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;請打開愛的禮物&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="img-container" onclick="openGift()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 愛心禮物繪圖 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg viewBox="0 0 200 200" width="200" height="200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;defs&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;stop offset="0%" style="stop-color:#ff758f"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;stop offset="100%" style="stop-color:#ff4d6d"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/linearGradient&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;filter id="shadow" x="-10%" y="-10%" width="120%" height="120%"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.15"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/filter&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/defs&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;g filter="url(#shadow)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 禮物盒身 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;rect x="35" y="75" width="130" height="95" rx="12" fill="url(#boxGrad)"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 緞帶 (豎) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;rect x="88" y="75" width="24" height="95" fill="#ffffff" opacity="0.9"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 禮物盒蓋 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;rect x="25" y="55" width="150" height="28" rx="8" fill="#ff4d6d"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;rect x="88" y="55" width="24" height="28" fill="#ffffff" opacity="0.9"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 蝴蝶結 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;path d="M 100 55 C 65 15, 35 45, 90 55 Z" fill="#ffffff"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;path d="M 100 55 C 135 15, 165 45, 110 55 Z" fill="#ffffff"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="100" cy="55" r="8" fill="#fff0f3"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 中央愛心圖案 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;path d="M 100 108 C 90 92, 65 102, 78 122 L 100 142 L 122 122 C 135 102, 110 92, 100 108 Z" fill="#ffffff" opacity="0.95"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/g&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="hint"&gt;（點擊禮物盒拆開）&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 第二階段：可愛小狗叼著千元鈔票 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="step-2" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;驚喜送達！&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="img-container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- 可愛小狗叼著 1000 元紙鈔 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;svg viewBox="0 0 200 200" width="200" height="200"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;g filter="url(#shadow)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 狗耳朵 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ellipse cx="50" cy="80" rx="16" ry="35" fill="#8d5524" transform="rotate(-15 50 80)"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ellipse cx="150" cy="80" rx="16" ry="35" fill="#8d5524" transform="rotate(15 150 80)"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 狗頭與腮紅 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ellipse cx="100" cy="88" rx="52" ry="44" fill="#e0a96d"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="68" cy="98" r="8" fill="#ffb4a2" opacity="0.6"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="132" cy="98" r="8" fill="#ffb4a2" opacity="0.6"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 嘴巴區域 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ellipse cx="100" cy="100" rx="28" ry="18" fill="#ffffff"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 眼睛 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="78" cy="80" r="6" fill="#2b2b2b"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="76" cy="78" r="2" fill="#ffffff"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="122" cy="80" r="6" fill="#2b2b2b"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;circle cx="120" cy="78" r="2" fill="#ffffff"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 鼻子 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ellipse cx="100" cy="93" rx="7" ry="5" fill="#2b2b2b"/&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- 1000元新臺幣鈔票 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;g transform="rotate(-4 100 118)"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;!-- 鈔票底色 (藍色系) --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;rect x="30" y="105" width="140" height="42" rx="4" fill="#5283a0" stroke="#3a6079" stroke-width="1.5"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;rect x="36" y="110" width="128" height="32" rx="2" fill="#7baac6"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;!-- 鈔票圖案與文字 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;circle cx="60" cy="126" r="10" fill="#a4cbdf" opacity="0.7"/&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;text x="135" y="131" font-size="15" font-weight="900" fill="#003147" font-family="Arial, sans-serif" text-anchor="middle"&gt;1000&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;text x="88" y="123" font-size="9" font-weight="bold" fill="#003147"&gt;中央銀行&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;text x="88" y="133" font-size="7" fill="#003147"&gt;中華民國&lt;/text&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/g&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/g&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/svg&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="btn-accept" id="acceptBtn" onclick="acceptGift()"&gt;請接受&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="sendingMsg" class="status-msg hidden"&gt;發送通知中...&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- 第三階段：感謝與完成畫面 --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="step-3" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;感謝接受！❤️&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p style="color: #555; font-size: 16px; margin-top: 15px; line-height: 1.6;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>通知已成功發送囉！&lt;br&gt;準備收下這份心意吧～</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function openGift() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('step-1').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('step-2').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function acceptGift() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const btn = document.getElementById('acceptBtn');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const sendingMsg = document.getElementById('sendingMsg');</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>btn.style.opacity = '0.6';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>sendingMsg.classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// ⚠️ 請替換為你在 Formspree 申請到的 Endpoint URL</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const formspreeUrl = 'https://formspree.io/f/YOUR_FORMSPREE_ID';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (formspreeUrl &amp;&amp; !formspreeUrl.includes('YOUR_FORMSPREE_ID')) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>fetch(formspreeUrl, {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>method: 'POST',</p>
+<p class="p1"><span class="Apple-converted-space">          </span>headers: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'Content-Type': 'application/json',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>'Accept': 'application/json'</p>
+<p class="p1"><span class="Apple-converted-space">          </span>},</p>
+<p class="p1"><span class="Apple-converted-space">          </span>body: JSON.stringify({</p>
+<p class="p1"><span class="Apple-converted-space">            </span>message: '🎉 對方已經點擊「請接受」愛的禮物囉！',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>time: new Date().toLocaleString('zh-TW', { timeZone: 'Asia/Taipei' })</p>
+<p class="p1"><span class="Apple-converted-space">          </span>})</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}).finally(() =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>showStep3();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// 若未填寫 Formspree URL，仍順暢切換至感謝頁面</p>
+<p class="p1"><span class="Apple-converted-space">        </span>setTimeout(showStep3, 500);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showStep3() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('step-2').classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('step-3').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
